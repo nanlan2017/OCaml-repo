@@ -1,0 +1,32 @@
+0
+true, false
+
+pred , succ , iszero
+if-then-else
+
+=============================================== 3.2  Syntax  ： 描述这样的一个 set of terms 
+
+定义方式一： terms , inductively (归纳)
+
+定义方式二： terms , inference rules (推导规则)
+
+定义方式三： terms , concretely (具体地)
+
+=============================================== 
+
+
+
+
+
+lexer.mll
+parser.mly
+--------------------
+test.f : 测试
+
+support.ml  : 定义 Error和 Pervasive  (info类型、print-error)
+
+syntax.ml : 定义 term （print-term)
+core.ml   : 实现eval 
+
+--------------------
+main.ml

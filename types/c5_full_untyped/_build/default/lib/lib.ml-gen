@@ -1,0 +1,8 @@
+(** @canonical Lib.Core *)
+module Core = Lib__Core
+
+(** @canonical Lib.Support *)
+module Support = Lib__Support
+
+(** @canonical Lib.Syntax *)
+module Syntax = Lib__Syntax

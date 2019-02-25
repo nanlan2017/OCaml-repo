@@ -1,0 +1,8 @@
+核心的
+
+termShift d tm        // \0->d\tm
+
+
+termSubst j s tm      // [j->s] tm
+
+termSubstTop s tm     // 替代0，并shift -1

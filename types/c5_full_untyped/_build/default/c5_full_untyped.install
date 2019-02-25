@@ -1,0 +1,7 @@
+lib: [
+  "_build/install/default/lib/c5_full_untyped/META" {"META"}
+  "_build/install/default/lib/c5_full_untyped/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/sampleprj" {"sampleprj"}
+]

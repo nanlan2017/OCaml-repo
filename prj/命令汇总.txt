@@ -1,0 +1,19 @@
+第一步： 写 .ml 和  .mli —————— 相当于C++ 的 .cpp 和 .h
+    @ ocamlc -i  x.ml > x.mli   // 可自动生成.ml对应的.mli文件
+第二步： 若本module要被别的模块引用，则须提供 .cmi : Compiled-Module-Interface
+    ★ ocamlc     x.mli          // 得到 .cmi
+    随后别的模块就可以引用到它了！
+
+
+.mli :   ocamlc -i     x.ml > x.mli
+.cmi :   ocamlc        x.mli
+.cmo :   ocamlc -c     x.ml
+.cmx :   ocamlopt -c   x.ml
+
+
+=======================================================================
+不要建立 子目录了 ！(好像每一个目录都是独立的一样！)
+？ 貌似  fold1/a.ml  并不能自动映射为  Fold1.A  module 
+想要 nested module ， 就乖乖的在 fold1.ml 里写 module A ...
+
+======================================================================= #require "core" 的问题

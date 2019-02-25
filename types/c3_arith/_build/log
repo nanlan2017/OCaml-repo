@@ -1,0 +1,13 @@
+# jbuilder build
+# OCAMLPARAM: unset
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/4w/5h0kl3vd7rn42dz0jr4thxkh0000gn/T/dune04e596.output 2> /dev/null
+$ /Users/jiaheng/.opam/default/bin/ocamlc.opt -config > /var/folders/4w/5h0kl3vd7rn42dz0jr4thxkh0000gn/T/duned635a6.output
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamldep.opt -modules -impl lib/syntax.ml) > _build/default/lib/.lib.objs/syntax.ml.d
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.lib.objs -I lib/.lib.objs/.private -no-alias-deps -open Lib -o lib/.lib.objs/lib__Syntax.cmo -c -impl lib/syntax.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlc.opt -w -40 -g -bin-annot -I lib/.lib.objs -I lib/.lib.objs/.private -no-alias-deps -open Lib -o lib/.lib.objs/lib__Core.cmo -c -impl lib/core.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlc.opt -w -40 -g -bin-annot -I bin/.main.eobjs -I lib/.lib.objs -no-alias-deps -o bin/.main.eobjs/main.cmo -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlopt.opt -w -40 -g -I lib/.lib.objs -I lib/.lib.objs/.private -intf-suffix .ml -no-alias-deps -open Lib -o lib/.lib.objs/lib__Syntax.cmx -c -impl lib/syntax.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlopt.opt -w -40 -g -I lib/.lib.objs -I lib/.lib.objs/.private -intf-suffix .ml -no-alias-deps -open Lib -o lib/.lib.objs/lib__Core.cmx -c -impl lib/core.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlopt.opt -w -40 -g -a -o lib/lib.cmxa lib/.lib.objs/lib.cmx lib/.lib.objs/lib__Support.cmx lib/.lib.objs/lib__Syntax.cmx lib/.lib.objs/lib__Core.cmx)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlopt.opt -w -40 -g -I bin/.main.eobjs -I lib/.lib.objs -intf-suffix .ml -no-alias-deps -o bin/.main.eobjs/main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/jiaheng/.opam/default/bin/ocamlopt.opt -w -40 -g -o bin/main.exe -I lib lib/lib.cmxa bin/.main.eobjs/main.cmx)

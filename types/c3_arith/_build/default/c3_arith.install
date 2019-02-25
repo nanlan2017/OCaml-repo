@@ -1,0 +1,7 @@
+lib: [
+  "_build/install/default/lib/c3_arith/META" {"META"}
+  "_build/install/default/lib/c3_arith/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/Arith" {"Arith"}
+]

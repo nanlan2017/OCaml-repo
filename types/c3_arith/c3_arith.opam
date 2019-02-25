@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "c3_arith"
+version: "~dev"
+synopsis: ""
+maintainer: "nanlan2017 <2543500257@qq.com>"
+authors: "nanlan2017 <2543500257@qq.com>"
+license: ""
+homepage: ""
+bug-reports: ""
+depends: [
+  "specify-dependencies-here" {>= "optional-version"}
+]
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+install: [make "install"]
+dev-repo: "git+https://"
+url {
+  src: "file:///Users/jiaheng/workspace/VSC_OCaml/types/c3_arith"
+}

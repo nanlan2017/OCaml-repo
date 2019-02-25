@@ -1,0 +1,2 @@
+(** @canonical Lib.Mo1 *)
+module Mo1 = Lib__Mo1
